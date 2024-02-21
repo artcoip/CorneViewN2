@@ -37,10 +37,10 @@
 //                    | GUI |     | SPC |   | SPC |     | ALT |
                         bindings = <
    &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7 &kp N8 &kp N9 &kp EQUAL       &kp K_CALC
-//   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7 &kp N8 &kp N9 &kp EQUAL       &trans
+//   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7 &kp N8 &kp N9 &kp EQUAL       &kp K_CALC
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp CARET  &kp RPAR &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &kp MINUS
 //   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp CARET  &kp RPAR &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &kp MINUS
-   &trans     &trans       &trans       &trans       &trans       &trans     &kp N0   &kp N1 &kp N2 &kp N3 &kp FSLH        &kp PLUS
+   &trans     &trans       &trans       &kp LC(C)    &trans       &trans     &kp N0   &kp N1 &kp N2 &kp N3 &kp FSLH        &kp PLUS
 //   &trans     &trans       &trans       &trans       &trans       &trans     &kp N0   &kp N1 &kp N2 &kp N3 &kp FSLH        &kp PLUS
                                     &kp LGUI     &trans   &kp SPACE      &kp SPACE  &trans   &kp RALT
                         >;
