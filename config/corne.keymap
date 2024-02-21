@@ -36,27 +36,24 @@
 // | REDO | UND | CUT | CPY | PST | PRT |   |  0  |  1  |  2  |  3  |  /  |  +   |
 //                    | GUI |     | SPC |   | SPC |     | ALT |
                         bindings = <
-   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7 &kp N8 &kp N9 &kp EQUAL       &kp K_CALC
-//   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7 &kp N8 &kp N9 &kp EQUAL       &kp K_CALC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp CARET  &kp RPAR &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &kp MINUS
-//   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp CARET  &kp RPAR &kp N4 &kp N5 &kp N6 &kp KP_MULTIPLY &kp MINUS
-   &kp K_REDO &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp LC(P)     &kp N0   &kp N1 &kp N2 &kp N3 &kp FSLH        &kp PLUS
-//   &trans     &trans       &trans       &trans       &trans       &trans     &kp N0   &kp N1 &kp N2 &kp N3 &kp FSLH        &kp PLUS
-                                    &kp LGUI     &trans   &kp SPACE      &kp SPACE  &trans   &kp RALT
+   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7  &kp N8  &kp N9  &kp EQUAL       &kp K_CALC
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp CARET  &kp RPAR &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY &kp MINUS
+   &kp K_REDO &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp LC(P)  &kp N0   &kp N1  &kp N2  &kp N3  &kp FSLH        &kp PLUS
+                &kp LGUI        &trans        &kp SPACE        &kp SPACE        &trans        &kp RALT
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+// |  EXT |  F3 |  F4 |  F5 |  F8 |     |   |  [  |  HM | F10 | F11 | F12 |  DEL |
+// | CAPS |     |  V+ | MUTE|  V- | NtPd|   |  ]  |  <- |  ^  |  -> |  "  |  >   |
+// |      |     | PRV | P/PS| NXT | STP |   |PRTSC| END |  v  |  :  |  ;  |  <   |
+//                    | GUI |     | SPC |   | SPC |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                             &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &kp C_AC_CLOSE &kp F3 &kp F4       &kp F5     &kp F8        &trans                &kp LBKT  &kp HOME &kp F10  &kp F11   &kp F12  &kp DEL
+   &kp CAPS       &trans &kp K_VOL_UP &kp C_MUTE &kp K_VOL_DN  &kp C_AL_TEXT_EDITOR  &kp RBKT  &kp LEFT &kp UP   &kp RIGHT &kp DQT  &kp GT
+   &trans         &trans &kp K_PREV   &kp K_PP   &kp K_NEXT    &kp K_STOP2           &kp PSCRN &kp END  &kp DOWN &kp COLON &kp SEMI &kp LT
+                             &kp LGUI &trans   &kp SPACE   &kp SPACE   &trans    &kp RALT
                         >;
                 };
         };
