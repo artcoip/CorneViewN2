@@ -43,7 +43,6 @@
 //   &kp LC(y)  &kp LC(z)    &kp LC(x)    &kp LC(c)    &kp LC(v)    &kp LC(p)  &kp N0   &kp N1 &kp N2 &kp N3 &kp FSLH        &kp PLUS
    &trans     &trans       &trans       &trans       &trans       &trans     &trans   &trans &trans &trans &trans          &trans
                                     &kp LGUI     &trans       &kp SPACE      &kp SPACE  &trans   &kp RALT
-                                      &trans &trans &trans       &trans &trans  &trans 
                         >;
                 };
 
