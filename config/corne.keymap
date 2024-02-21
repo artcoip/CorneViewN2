@@ -31,13 +31,13 @@
 // -----------------------------------------------------------------------------------------
 // |               lower_layer {
 // -----------------------------------------------------------------------------------------
-// | EXCL |  @  |  #  |  $  |  %  |  &  |   |  (  |  7  |  8  |  9  |  =  |      |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 |  ^  |   |  )  |  4  |  5  |  6  |  *  |  -   |
+// | EXCL |  @  |  #  |  $  |  %  |  &  |   |  (  |  7  |  8  |  9  |  =  |  ^   |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 |     |   |  )  |  4  |  5  |  6  |  *  |  -   |
 // |      | UND | CUT | CPY | PST | PRT |   |  0  |  1  |  2  |  3  |  /  |  +   |
 //                    | GUI |     | SPC |   | SPC |     | ALT |
                         bindings = <
-   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7  &kp N8  &kp N9  &kp EQUAL       &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &kp CARET  &kp RPAR &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY &kp MINUS
+   &kp EXCL   &kp AT       &kp HASH     &kp DLLR     &kp PRCNT    &kp AMPS   &kp LPAR &kp N7  &kp N8  &kp N9  &kp EQUAL       &kp CARET
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &trans     &kp RPAR &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY &kp MINUS
    &trans     &kp LC(Z)    &kp LC(X)    &kp LC(C)    &kp LC(V)    &kp LC(P)  &kp N0   &kp N1  &kp N2  &kp N3  &kp FSLH        &kp PLUS
                                                   &kp LGUI &trans &kp SPACE  &kp SPACE &trans &kp RALT
                         >;
@@ -45,15 +45,15 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  EXT |  F3 |  F4 |  F5 |  F8 | FIND|   |  [  |  HM | F10 | F11 | F12 |  DEL |
-// | CAPS | CALC|  V+ | MUTE|  V- |     |   |  ]  |  <- |  ^  |  -> |  "  |  >   |
-// |      | NTPD| PRV | P/PS| NXT | STP |   |PRTSC| END |  v  |  :  |  ;  |  <   |
+// |  EXT |  F3 |  F4 |  F5 | FIND| HOME|   |  [  |  F8 | F10 | F11 | F12 |  DEL |
+// | CAPS |     |  V+ | MUTE|  V- | END |   |  ]  |  <- |  ^  |  -> |  "  |  >   |
+// |      | STP | PRV | P/PS| NXT |PRTSC|   |     |     |  v  |  :  |  ;  |  <   |
 //                    | GUI |     | SPC |   | SPC |     | ALT |
                         bindings = <
-   &kp C_AC_CLOSE &kp F3               &kp F4       &kp F5     &kp F8        &kp K_FIND   &kp LBKT  &kp HOME &kp F10  &kp F11   &kp F12  &kp DEL
-   &kp CAPS       &kp K_CALC           &kp K_VOL_UP &kp C_MUTE &kp K_VOL_DN  &trans       &kp RBKT  &kp LEFT &kp UP   &kp RIGHT &kp DQT  &kp GT
-   &trans         &kp C_AL_TEXT_EDITOR &kp K_PREV   &kp K_PP   &kp K_NEXT    &kp K_STOP2  &kp PSCRN &kp END  &kp DOWN &kp COLON &kp SEMI &kp LT
-                                                               &kp LGUI &trans &kp SPACE  &kp SPACE &trans &kp RALT
+   &kp C_AC_CLOSE &kp F3      &kp F4       &kp F5     &kp K_FIND    &kp HOME   &kp LBKT  &kp F8   &kp F10  &kp F11   &kp F12  &kp DEL
+   &kp CAPS       &trans      &kp K_VOL_UP &kp C_MUTE &kp K_VOL_DN  &kp END    &kp RBKT  &kp LEFT &kp UP   &kp RIGHT &kp DQT  &kp GT
+   &trans         &kp K_STOP2 &kp K_PREV   &kp K_PP   &kp K_NEXT    &kp PSCRN  &trans    &trans   &kp DOWN &kp COLON &kp SEMI &kp LT
+                                         &kp LGUI &trans &kp SPACE  &kp SPACE &trans &kp RALT
                         >;
                 };
         };
